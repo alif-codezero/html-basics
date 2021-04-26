@@ -20,28 +20,46 @@
   </nav>
 
   <form action="">
-    <label for="username">Username: </label>
-    <input type="text" id="username">
-    <br>
-    <label for="password">Password: </label>
-    <input type="password" id="password">
-    <br>
-    <input type="radio" name="gender" id="male"><label for="male">Male</label>
-    <input type="radio" name="gender" id="female"><label for="female">Female</label>
-    <br>
-    <input type="checkbox" name="hobby" id="gardening"><label for="gardening">Gardening</label>
-    <input type="checkbox" name="hobby" id="fishing"><label for="fishing">Fishing</label>
-    <input type="checkbox" name="hobby" id="travelling"><label for="travelling">Travelling</label>
-    <br>
-    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-    <br>
-    <select name="city" id="city">
-      <option value="raha">Raha</option>
-      <option value="kendari">Kendari</option>
-      <option value="jakarta">Jakarta</option>
-    </select>
-    <br>
-    <button type="submit">Send</button>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td><label for="username">Username: </label></td>
+        <td><input type="text" id="username"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password: </label></td>
+        <td><input type="password" id="password"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="radio" name="gender" id="male"><label for="male">Male</label>
+          <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center">
+          <input type="checkbox" name="hobby" id="gardening"><label for="gardening">Gardening</label>
+          <input type="checkbox" name="hobby" id="fishing"><label for="fishing">Fishing</label>
+          <input type="checkbox" name="hobby" id="travelling"><label for="travelling">Travelling</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="description">Description</label></td>
+        <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="city">City</label></td>
+        <td>
+          <select name="city" id="city">
+            <option value="raha">Raha</option>
+            <option value="kendari">Kendari</option>
+            <option value="jakarta">Jakarta</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><button type="submit">Send</button></td>
+      </tr>
+    </table>
   </form>
   <br>
 
