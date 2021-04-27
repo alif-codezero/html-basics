@@ -20,34 +20,36 @@
   </nav>
 
   <form action="">
-    <table border="1" cellspacing="0" cellpadding="5">
+    <table border="0" cellspacing="0" cellpadding="5">
       <tr>
-        <td><label for="username">Username: </label></td>
+        <td align="right"><label for="username">Username: </label></td>
         <td><input type="text" id="username"></td>
       </tr>
       <tr>
-        <td><label for="password">Password: </label></td>
+        <td align="right"><label for="password">Password: </label></td>
         <td><input type="password" id="password"></td>
       </tr>
       <tr>
-        <td colspan="2" align="center">
+        <td align="right"><label for="gender">Gender: </label></td>
+        <td id="gender" colspan="2">
           <input type="radio" name="gender" id="male"><label for="male">Male</label>
           <input type="radio" name="gender" id="female"><label for="female">Female</label>
         </td>
       </tr>
       <tr>
-        <td colspan="3" align="center">
+        <td align="right"><label for="hobby">Hobby: </label></td>
+        <td id="hobby" colspan="3" align="center">
           <input type="checkbox" name="hobby" id="gardening"><label for="gardening">Gardening</label>
           <input type="checkbox" name="hobby" id="fishing"><label for="fishing">Fishing</label>
           <input type="checkbox" name="hobby" id="travelling"><label for="travelling">Travelling</label>
         </td>
       </tr>
       <tr>
-        <td><label for="description">Description</label></td>
+        <td align="right"><label for="description">Description: </label></td>
         <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
       </tr>
       <tr>
-        <td><label for="city">City</label></td>
+        <td align="right"><label for="city">City: </label></td>
         <td>
           <select name="city" id="city">
             <option value="raha">Raha</option>
@@ -57,7 +59,8 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2" align="center"><button type="submit">Send</button></td>
+        <td></td>
+        <td><button type="submit">Send</button></td>
       </tr>
     </table>
   </form>
